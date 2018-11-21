@@ -1,0 +1,23 @@
+{{ table.to_html | safe }}
+<p>data asli</p>
+{{ focus_table.to_html | safe }}
+<p>fitur terpilih</p>
+{{ normalized_table.to_html | safe }}
+<p>data ternormalisasi</p>
+
+{{ weights.to_html | safe }}
+<p>beban</p>
+
+{{ score.to_html | safe }}
+<p>skor</p>
+{{ suggestion }}
+<p>suggesti</p>
+
+
+<form method="GET" >
+    {{ form.as_table }}
+    <input type="submit" value="Submit" >
+</form>
+
+{{ wut }}
+{{ errors }}
